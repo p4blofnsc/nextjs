@@ -5,6 +5,11 @@ import { lusitana } from '@/app/ui/font';
 import { fetchCardData } from '@/app/lib/data';
 import { Suspense } from 'react';
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Panel',
+};
 
 export default async function Page() {
   const {
